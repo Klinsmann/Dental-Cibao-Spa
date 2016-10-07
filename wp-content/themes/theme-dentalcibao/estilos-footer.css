@@ -1,0 +1,55 @@
+.pre-footer{
+  font-size: 16px;
+}
+.pre-footer h3{
+  font-size: 24px;
+  color: #0e80bc;
+  font-weight: bold;
+}
+.pre-footer ul li a{
+  color: #8bb63d;
+}
+footer{
+  border:0;
+  background: #dadada;
+  font-size: 16px;
+  padding: 20px 10px;
+}
+footer .cp{
+  color: #0e80bc;
+}
+footer .adress{
+  max-width: 750px;
+    margin: 0 auto;
+}
+footer figure img{
+  margin-top: 10px
+}
+footer figure h4{
+  margin-top: 0;
+  color: #0e80bc;
+}
+footer .redes-sociales li a{
+	background: url(img/icons-sociales.png)no-repeat center center;
+    width: 45px;
+    height: 45px;
+    background-size: 140px;
+    display: block;
+}
+footer .redes-sociales li:nth-child(1) a{
+	background-position:0;
+}
+footer .redes-sociales li:nth-child(2) a{
+	background-position:-46px;
+}
+footer .redes-sociales li:nth-child(3) a{
+	background-position:-95px;
+}
+.menu-footer{
+	margin: 10px 0;
+}
+.menu-footer li a{
+	background: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}

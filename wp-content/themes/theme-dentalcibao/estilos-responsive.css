@@ -1,0 +1,198 @@
+@media (max-width: 980px){
+  .testimonio h4{
+    text-align: left;
+  }
+.turismo-dental .video-responsive{
+	
+	padding-bottom: 56.25% !important;
+}
+}
+
+@media (max-width: 768px){
+  .no-mobile{
+    display: none !important;
+  }
+  .logo{
+    display: block;
+    text-align: center;
+    float: none !important;
+  }
+  figure.logo a{
+    margin:0 auto;
+  }
+  .title-mobile{
+    display: block !important;
+    font-size: 27px;
+  }
+  .llamado-accion h1{
+    font-size: 28px;
+  }
+  .llamado-accion p{
+    font-size: 19px;
+  }
+  .llamado-accion span.no-mobile{
+    display: none;
+  }
+  .datos-contacto ul li:nth-child(1), .datos-contacto ul li:nth-child(3), .datos-contacto ul li:nth-child(4){
+    display: none;
+  }
+  .datos-contacto ul{
+    width: 180px;
+    margin: 5px auto;
+    float: none !important;
+  }
+
+  .datos-contacto ul li:nth-child(2){
+    background-position: left center;
+  }
+  .llamado-accion-txt{
+    text-align: center;
+  }
+  .video-lightbox{
+    display: none;
+  }
+  div.form-mobile{
+    display: block !important;
+  }
+  .punto-accion figure{
+    display: block;
+  }
+  .punto-accion figure img{
+    width: 100px;
+    margin:0 auto;
+  }
+  .punto-accion h2{
+    background: #009cde;
+    padding: 5px 25px;
+    margin-top: 0;
+    color: white;
+    border-radius: 5px;
+  }
+  .punto-accion .punto-accion-txt{
+    max-width: 90%;
+    text-align: center;
+    font-size: 17px;
+  }
+  .punto-accion-txt a{
+   width:200px;
+   margin-bottom:15px;
+  }
+  .casos h3{
+    margin-top:0;
+   }
+  .casos{
+    padding: 20px;
+  }
+  .casos-txt{
+    text-align: center;
+  }
+  .testimonio-txt{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .pre-footer{
+    text-align: center;;
+  }
+  .busquedas-frecuentes ul{
+    float: none !important;
+  }
+  .btn-encabezado-titulo{
+    float: none !important;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .btn-encabezado-titulo img{
+    margin: 0 auto;
+  }
+  .txt-encabezado-titulo{
+    text-align: center;
+  }
+  .contenido-izq-testimonios{
+    text-align: center;
+  }
+  .contenido-der {
+    text-align: center;
+  }
+  .contenido-der .contenido-lado-der{
+    float: none !important;
+  }
+  .contenido-der figure img{
+    margin: 0 auto;
+  }
+  .contenido-der-mobile{
+    text-align: center;
+    display: block;
+  }
+  .contenido-der-mobile .contenido-lado-der figure img{
+    margin: 0 auto;
+  }
+
+  .testimonio h4{
+    text-align: center;
+  }
+  .top-bar-page{
+    text-align: center;
+  }
+.seccion-testimonios .testimonio{
+text-align:center;
+}
+.seccion-testimonios .testimonio h4{
+text-align:center;
+}
+
+}
+@media (max-width: 480px){
+
+  .txt-encabezado-titulo h2{
+    font-size: 18px;
+  }
+  .llamado-accion p br{
+    display: none;
+  }
+  .llamado-accion h1.no-desktop{
+    font-size: 26px !important;
+  }
+  .txt-encabezado-titulo-footer h2{
+    margin-top: 0;
+  }
+  .contacto-container figure{
+    text-align: center;
+  }
+  .sucursal-container img{
+    display: block;
+    margin: 0 auto;
+  }
+  .otra-informacion, .eslogan-dental{
+    margin-left:70px;
+  }
+  .otra-informacion, .eslogan-dental, .otra-informacion p, .eslogan-dental p{
+    text-align:left;
+    font-size:12px !important;
+  }
+.eslogan-dental p{
+max-width: 285px;
+}
+}
+@media (max-width: 430px){
+
+  .llamado-accion h1.no-desktop{
+    font-size: 26px !important;
+  }
+  
+  .llamado-accion p{
+    font-size: 17px !important;
+  }
+
+.otra-informacion, .eslogan-dental, .otra-informacion p, .eslogan-dental p{
+    text-align:left;
+    font-size:12px !important;
+  }
+.otra-informacion, .eslogan-dental{
+    margin-left:30px;
+  }
+.eslogan-dental p, .otra-informacion p{
+max-width: 220px;
+}
+}

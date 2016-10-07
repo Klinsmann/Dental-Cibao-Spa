@@ -1,0 +1,941 @@
+/**
+  Theme Name: Dental Cibao
+  Theme URI: http://academiadelaweb.com
+  Version: 1
+  Author: Klinsmann
+  Author URI: http://www.siftware.co.uk
+  Tags: simple, clean, fixed width, widget-ready, widgets, right sidebar, two columns, valid XHTML, valid CSS, blank-slate
+  Licence: LGPL
+  
+  Description: A theme created with developers in mind which should enable rapid WP reskinning. The CSS is minimal but consistent cross-browser, there are a couple of SEO tweaks and the page navigation works sensibly but can modified easily.
+
+  The CSS that follows is the bare minimum of styling for a two column, fixed width and centred layout that should be
+  consistent in 'modern browsers'
+*/
+
+@import url('estilos-header.css');
+@import url('estilos-footer.css');
+@import url('estilos-responsive.css');
+
+/** CONSERVAR ESTOS ESTILOS */
+body{
+	position:relative;
+	z-index:1;
+}
+body>.contacto-fijo{
+	position:fixed;
+	
+}
+.contacto-fijo{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+	z-index:2;
+}
+.contacto-fijo-tel, .contacto-fijo-mail{
+	width: 50%;
+    float: left;
+	text-align:center;
+    background: rgba(235,232,232,1);
+background: -moz-linear-gradient(top, rgba(235,232,232,1) 0%, rgba(214,210,210,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(235,232,232,1)), color-stop(100%, rgba(214,210,210,1)));
+background: -webkit-linear-gradient(top, rgba(235,232,232,1) 0%, rgba(214,210,210,1) 100%);
+background: -o-linear-gradient(top, rgba(235,232,232,1) 0%, rgba(214,210,210,1) 100%);
+background: -ms-linear-gradient(top, rgba(235,232,232,1) 0%, rgba(214,210,210,1) 100%);
+background: linear-gradient(to bottom, rgba(235,232,232,1) 0%, rgba(214,210,210,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe8e8', endColorstr='#d6d2d2', GradientType=0 );	height:font-weight: bold;
+	color: #4087cb;
+	font-size:12px;
+}
+.contacto-fijo-tel{
+	border-right: 1px solid;
+}
+.contacto-fijo-tel figure, .contacto-fijo-mail figure{
+	display: inline-block;
+   font-family: 'Myriad Pro Regular';
+    line-height: 50px;
+}
+.contacto-fijo-mail figure{
+	 margin-left: 10px;
+}
+.contacto-fijo-tel figure img, .contacto-fijo-mail figure img{
+	width:32px;
+}
+.texto-llamado-accion{
+	display:inline-block;
+}
+
+@font-face {
+font-family: 'Myriad Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Regular'), url('fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Condensed'), url('fonts/MYRIADPRO-COND.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Semibold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Semibold Italic'), url('fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Semibold';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Semibold'), url('fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Condensed Italic'), url('fonts/MYRIADPRO-CONDIT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold Italic'), url('fonts/MYRIADPRO-BOLDIT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Bold Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold Condensed Italic'), url('fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Bold Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold Condensed'), url('fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold'), url('fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+    .current_page_item a,
+    .current_page_parent a {
+      text-decoration: none;
+    }
+      .current_page_item a:hover,
+      .current_page_parent a:hover {
+        text-decoration: underline;
+      }
+
+  ol#posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #pagination {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+    #pagination li {
+      display: inlne;
+    }
+    #pagination .previous {
+      text-align: left;
+      float: left;
+    }
+    #pagination .future {
+      text-align: right;
+      float: right;
+    }
+
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+
+/****MIS ESTILOS****/
+.style-blue{
+color:#1087CB;
+}
+.style-green{
+color:#A0E123;
+}
+body h2.title-bg{
+  font-size: 20px !important;
+}
+img{
+  max-width: 100% !important;
+}
+header.entry-header{
+  display: none;
+}
+#main-column{
+  background: white;
+}
+#main-column .page {
+  border: 0;
+}
+
+.no-desktop{
+  display: none;
+}
+
+
+
+
+
+.llamado-accion{
+  background: #0a7ebb url(img/bg-llamado-accion.jpg)no-repeat top center;
+  background-size: cover;
+  color: white;
+  padding: 30px 0;
+}
+.llamado-accion h1{
+  margin-top: 0;
+  font-size: 30px;
+  font-family: 'Myriad Pro Semibold';
+}
+.llamado-accion h1 span{
+  color: #c9f0fe;
+}
+.llamado-accion h1.no-desktop{
+  display: none;
+}
+.llamado-accion p{
+  font-size: 16px;
+}
+.otra-informacion, .eslogan-dental{
+margin-top: 15px;
+}
+.otra-informacion figure, .otra-informacion .descripcion-hodelpa, .eslogan-dental figure, .eslogan-dental p{
+display:inline-block;
+vertical-align:top;
+color:white;
+}
+.eslogan-dental figure, .eslogan-dental p{
+vertical-align:top;
+}
+.eslogan-dental p{
+max-width:290px;
+font-size:12px;
+}
+.descripcion-hodelpa p{
+font-size:12px;
+max-width: 260px;
+}
+.otra-informacion h5{
+margin-top:0;
+}
+.otra-informacion a{
+color:white;
+font-size:12px;
+}
+
+.img-sellos p, .img-sellos img{
+display:inline-block;
+}
+.img-sellos p{
+margin-right:15px;
+}
+.puntos-accion{
+  padding: 25px 0;
+  text-align: center;
+}
+.punto-accion figure{
+  display: inline-block;
+  vertical-align: middle;
+}
+.punto-accion figure img{
+  width: 109px;
+}
+.punto-accion .punto-accion-txt{
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 300px;
+  text-align: center;
+}
+.punto-accion .punto-accion-txt h2{
+  color: #0e80bc;
+  font-size: 20px;
+}
+.punto-accion-txt a{
+  background: #8bb63d;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 25px;
+  display:block;
+  width:120px;
+  margin: 15px auto 0 auto;
+}
+.form-mobile-down, .hacer-cita h2{
+  display: inline-block;
+  vertical-align: middle;
+}
+.form-mobile-top br, .form-mobile-top p, .form-mobile-down br, .form-mobile-down p{
+  display: none;
+}
+.form-mobile-top a.btn, .form-mobile-top a.btn{
+  padding: 0;
+}
+.btn{
+margin-top:12px;
+}
+.casos{
+  background: #83ae34;
+  padding: 25px 0 0 0;
+  color: #fff;
+  text-align: center;
+}
+.casos-txt{
+  text-align: left;
+}
+.testimonios{
+  padding: 20px 0;
+  font-size: 12px;
+  color: #999999;
+}
+.testimonio h4{
+  font-size: 14px;
+  color: #bbdf24;
+  text-align: center;
+}
+.testimonio h4 span{
+  color: #4087cb;
+}
+.hacer-cita{
+  background: #0a7ebb;
+  padding: 10px 0;
+  text-align: center;
+}
+.hacer-cita h2{
+  margin: 0;
+  color: white;
+}
+.hacer-cita figure{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/****ESTILOS ENTRADAS****/
+
+.top-bar-page{
+  background: #0571aa;
+  color: white;
+  padding-bottom: 10px;
+}
+.txt-encabezado-titulo h1{
+  margin-bottom: 0;
+}
+.txt-encabezado-titulo h2{
+  margin-top: 0;
+  color: #c9f0fe;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.btn-encabezado-titulo{
+  margin-top: 10px;
+}
+.encabezado-titulo-footer{
+  background: #0571aa;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+.txt-encabezado-titulo-footer, .btn-encabezado-titulo{
+  display: inline-block;
+  vertical-align: middle;
+}
+.txt-encabezado-titulo-footer h2{
+  text-align: center;
+}
+.encabezado-titulo-footer .btn-encabezado-titulo{
+  margin: 0;
+}
+.encabezado-titulo-footer .btn-encabezado-titulo figure{
+  float: none;
+}
+.btn-encabezado-titulo figure{
+  float: right;
+}
+
+.contenido-izq ul{
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+.contenido-izq ul li{
+  background: url(img/bullet.jpg)no-repeat;
+  padding-left: 35px;
+  padding-bottom: 10px;
+}
+footer.entry-meta{
+  display: none;
+}
+.busquedas-frecuentes{
+  margin-top: 20px;
+}
+.content-page{
+  margin-top: 35px;
+}
+.contacto-container h1{
+      font-size: 26px;
+    color: #1087CB;
+}
+.contacto__datos-contacto h3{
+    font-size: 20px;
+    color: #94C81A;
+    border-bottom: 2px solid #999999;
+    padding-bottom: 5px;
+}
+.contacto-container ul.numero-telefonos li:nth-child(1), .contacto-container ul.numero-telefonos li:nth-child(2), .contacto-container ul.numero-telefonos li:nth-child(3), .contacto-container ul.numero-telefonos li:nth-child(4){
+	background-size: 24px !important;
+    padding-left: 30px;
+    padding-bottom: 10px;	
+}
+.contacto-container ul.numero-telefonos li:nth-child(1){
+	background: url(img/icon-phone.png)no-repeat;
+}
+.container ul.numero-telefonos li:nth-child(2){
+	background: url(img/icon-whatsapp.png)no-repeat;
+}
+.container ul.numero-telefonos li:nth-child(3){
+	background: url(img/icon-skype.png)no-repeat;
+}
+.formulario-contacto br{
+  display: none;
+}
+.formulario-contacto label{
+  display: inline;
+}
+.formulario-contacto h3{
+  font-size: 16px;
+  color: #94C81A;
+}
+.formulario-contacto p strong{
+  color: #1087CB;
+  font-size: 18px;
+}
+.formulario-contacto .formfields{
+  display: block;
+  width: 100%;
+  height: 35px;
+
+}
+.formfieldsmensaje{
+   display: block;
+  width: 100%;
+}
+#imageField{
+  display: block;
+  margin-top: 30px;
+}
+.galeria-instalaciones{
+  margin-top: 30px;
+}
+.galeria-instalaciones .btn-galeria{
+  background: #94C81A;
+  padding: 10px;
+  display: block;
+  margin:10px auto;
+  color: white;
+  text-align: center;
+}
+.miembros{
+  border-left: 3px solid #DFDFDF;
+  margin-left: 20px;
+}
+.sucursal-container{
+  margin-bottom: 45px;
+}
+.sucursal-container h2{
+  color: #1087CB;
+}
+.sucursal-container .galeria-instalaciones img{
+    padding: 3px;
+    border: 2px solid #E1E1E1;
+}
+.sucursal-container h2 span{
+  color:#7ED517;
+}
+.sucursal-container h3{
+  color: #94C81A;
+  border-bottom: 2px solid #999999;
+  padding-bottom: 5px;
+}
+.sucursal-container strong
+{
+  color: #1087CB;
+}
+.sucursal-container p{
+  margin-bottom: 0;
+}
+.medico-curriculum{
+  margin-bottom: 20px;
+}
+.bloque-telefonos p, .bloque-email strong{
+  color: #1087CB;
+  font-size: 19px;
+}
+.bloque-direccion .button{
+  border: 0;
+  border-radius: 5px;
+  background: #1087CB;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  display: block;
+    margin: 0 auto;
+    width: 220px;
+    text-align: center;
+}
+.horario-hora{
+  padding-left: 15px;
+}
+.recursos h2{
+color:#1087CB;
+}
+
+.recursos h3{
+color:#94C81A;
+}
+
+.seccion-testimonios .testimonio h4{
+text-align:left;
+}
+.seccion-testimonios .testimonio-txt h4{
+color: #bbdf24;
+}
+.seccion-testimonios .testimonio-txt h4 span{
+color: #4087cb;
+}
+#html5-watermark{
+display:none !important;
+}
+.medios h2{
+font-size: 26px;
+color:#94C81A;
+}
+.medios h4{
+color: #1087CB;
+font-size:14px;
+text-align:center;
+}
+.medios figure{
+text-align:center;
+}
+
+.medios figure img{
+padding: 3px;
+border: 2px solid #E1E1E1;
+margin:0 auto;
+}
+
+.curriculum{
+margin-top:20px;
+}
+.curriculum h2{
+color: #1087CB;
+font-size:25px;
+}
+.curriculum h3{
+font-size:22px;
+color: #94C81A;
+}
+.curriculum h3 span{
+color:#1087CB;
+}
+.curriculum h4{
+color:#1087CB;
+}
+.curriculum figure img{
+padding:3px;
+border:2px solid #999;
+}
+.curriculum-datos-contacto p{
+font-size:18px;
+color:#1087CB;
+margin-top:10px;
+margin-bottom:0;
+}
+.curriculum-datos-contacto span{
+font-size:15px;
+color:#94C81A;
+}
+
+.page-enviado .miembros{
+margin-left:0;
+}
+.page-enviado .texto-enviado{
+    padding: 15px 25px;
+    background: #ddd;
+    border: 2px solid;
+}
+.page-enviado .texto-enviado p, .page-enviado .texto-enviado p strong{
+font-size:12px;
+}
+.texto-con-imagen .texto-con-imagen-t, .texto-con-imagen .texto-con-imagen-i{
+display:inline-block;
+}
+.texto-con-imagen .texto-con-imagen-t{
+max-width: 180px;
+}
+
+.preguntas-frecuentes{
+margin-bottom:40px;
+}
+.preguntas-frecuentes .descarga-pdf .txt-descarga-pdf, .preguntas-frecuentes .descarga-pdf .img-icon-pdf{
+display:inline-block;
+vertical-align:top;
+}
+.preguntas-frecuentes .descarga-pdf .txt-descarga-pdf{
+max-width:320px;
+}
+
+.cirugia-guiada h2{
+	margin-top: 0;
+	margin-bottom: 20px;
+	color:#94C81A;
+	font-size: 22px;
+}
+
+.cirugia-guiada .cg-right{
+	border-left: 2px solid #ddd;
+	padding-left: 30px;
+	margin-left: 45px;
+}
+a.btn-ver-casos{
+	display: block;
+    background: #A0E123;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+.spa-dental h2{
+	margin-top: 0;
+}
+.spa-dental .btn-testimonios{
+    color: white;
+    padding: 10px 15px;
+    max-width: 250px;
+    border-radius: 5px;
+	background:#A0E123;
+}
+.turismo-dental .video-youtube{
+	margin-bottom: 35px;
+}
+.turismo-dental h2{
+	margin-top: 0;
+}
+.turismo-dental .video-responsive{
+	
+	max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 25px;
+	padding-bottom: 40.25%;
+    height: 0;
+}
+.turismo-dental .video-responsive iframe{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+a.more-link{
+background: #8bb63d;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 23px 0;
+    display: block;
+    max-width: 150px;
+    text-align: center;
+}
+.widget{
+margin-bottom: 15px;
+}
+.widget_search .btn{
+margin:0;
+}
+.contenido-blog{
+margin-top:20px;
+}
+.lateral-blog{
+margin-top:30px;
+}
+/****Pagina Servicios y Services****/
+
+.servicios figure img{
+border:2px solid #E1E1E1;
+padding:3px;
+}
+.servicios-left h3, .servicios-right h3{
+margin-top:0;
+}
+
+/****Pagina Sucursales****/
+.sucursales .otras-sucursales{
+margin:45px 0;
+}
+.sucursales figure img{
+    padding: 3px;
+    border: 2px solid #E1E1E1;
+}
+.sucursales figure.stars-rating img{
+border:0;
+}
+.sucursales p{
+margin-bottom:0;
+}
+.sucursales h3{
+border-bottom: 2px solid #E1E1E1;
+padding-bottom:5px;
+}
+
+.sucursales .btn-sucursal a{
+border: 0;
+    border-radius: 5px;
+    background: #1087CB;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 220px;
+    text-align: center;
+}
+
+
+@media (max-width: 980px){
+  .testimonio h4{
+    text-align: left;
+  }
+.turismo-dental .video-responsive{
+	
+	padding-bottom: 56.25% !important;
+}
+}
+
+@media (max-width: 768px){
+  .no-mobile{
+    display: none !important;
+  }
+  .logo{
+    display: block;
+    text-align: center;
+    float: none !important;
+  }
+  figure.logo a{
+    margin:0 auto;
+  }
+  .title-mobile{
+    display: block !important;
+    font-size: 27px;
+  }
+  .llamado-accion h1{
+    font-size: 28px;
+  }
+  .llamado-accion p{
+    font-size: 19px;
+  }
+  .llamado-accion span.no-mobile{
+    display: none;
+  }
+  .datos-contacto ul li:nth-child(1), .datos-contacto ul li:nth-child(3), .datos-contacto ul li:nth-child(4){
+    display: none;
+  }
+  .datos-contacto ul{
+    width: 180px;
+    margin: 5px auto;
+    float: none !important;
+  }
+
+  .datos-contacto ul li:nth-child(2){
+    background-position: left center;
+  }
+  .llamado-accion-txt{
+    text-align: center;
+  }
+  .video-lightbox{
+    display: none;
+  }
+  div.form-mobile{
+    display: block !important;
+  }
+  .punto-accion figure{
+    display: block;
+  }
+  .punto-accion figure img{
+    width: 100px;
+    margin:0 auto;
+  }
+  .punto-accion h2{
+    background: #009cde;
+    padding: 5px 25px;
+    margin-top: 0;
+    color: white;
+    border-radius: 5px;
+  }
+  .punto-accion .punto-accion-txt{
+    max-width: 90%;
+    text-align: center;
+    font-size: 17px;
+  }
+  .punto-accion-txt a{
+   width:200px;
+   margin-bottom:15px;
+  }
+  .casos h3{
+    margin-top:0;
+   }
+  .casos{
+    padding: 20px;
+  }
+  .casos-txt{
+    text-align: center;
+  }
+  .testimonio-txt{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .pre-footer{
+    text-align: center;;
+  }
+  .busquedas-frecuentes ul{
+    float: none !important;
+  }
+  .btn-encabezado-titulo{
+    float: none !important;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .btn-encabezado-titulo img{
+    margin: 0 auto;
+  }
+  .txt-encabezado-titulo{
+    text-align: center;
+  }
+  .contenido-izq-testimonios{
+    text-align: center;
+  }
+  .contenido-der {
+    text-align: center;
+  }
+  .contenido-der .contenido-lado-der{
+    float: none !important;
+  }
+  .contenido-der figure img{
+    margin: 0 auto;
+  }
+  .contenido-der-mobile{
+    text-align: center;
+    display: block;
+  }
+  .contenido-der-mobile .contenido-lado-der figure img{
+    margin: 0 auto;
+  }
+
+  .testimonio h4{
+    text-align: center;
+  }
+  .top-bar-page{
+    text-align: center;
+  }
+.seccion-testimonios .testimonio{
+text-align:center;
+}
+.seccion-testimonios .testimonio h4{
+text-align:center;
+}
+
+}
+@media (max-width: 480px){
+
+  .txt-encabezado-titulo h2{
+    font-size: 18px;
+  }
+  .llamado-accion p br{
+    display: none;
+  }
+  .llamado-accion h1.no-desktop{
+    font-size: 26px !important;
+  }
+  .txt-encabezado-titulo-footer h2{
+    margin-top: 0;
+  }
+  .contacto-container figure{
+    text-align: center;
+  }
+  .sucursal-container img{
+    display: block;
+    margin: 0 auto;
+  }
+  .otra-informacion, .eslogan-dental{
+    margin-left:70px;
+  }
+  .otra-informacion, .eslogan-dental, .otra-informacion p, .eslogan-dental p{
+    text-align:left;
+    font-size:12px !important;
+  }
+.eslogan-dental p{
+max-width: 285px;
+}
+}
+@media (max-width: 430px){
+
+  .llamado-accion h1.no-desktop{
+    font-size: 26px !important;
+  }
+  
+  .llamado-accion p{
+    font-size: 17px !important;
+  }
+
+.otra-informacion, .eslogan-dental, .otra-informacion p, .eslogan-dental p{
+    text-align:left;
+    font-size:12px !important;
+  }
+.otra-informacion, .eslogan-dental{
+    margin-left:30px;
+  }
+.eslogan-dental p, .otra-informacion p{
+max-width: 220px;
+}
+}

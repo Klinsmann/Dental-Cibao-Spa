@@ -9,20 +9,31 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-sm-8 contenido-blog">
+		<div class="col-sm-8 contenido-blog margin-top-down">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<article>
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
-			<p><em>Por <?php the_author();?>
-			<?php echo the_date('l, F, jS Y');?>
-			en <?php the_category(', ');?>
-			<a href="<?php comments_link();?>"><?php comments_number();?></a></em></p>
 			
-			<?php global $more; $more = false; ?>
-			<p>holaa</p>
-			<?php the_content('<div>Leer mas</div>'); ?>
-			<?php $more = true; ?>
-		</article>
+			<article>
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
+				<p><em>Por <?php the_author();?>
+				<?php echo the_date('l, F, jS Y');?>
+				en <?php the_category(', ');?>
+				<a href="<?php comments_link();?>"><?php comments_number();?></a></em></p>
+				<div class="imagen-con-estracto-contenido">
+					<figure class="img-articulo">
+						<?php 
+							if (has_post_thumbnail()){
+								the_post_thumbnail();
+							}
+							
+						 ?>
+					</figure><!-- fin del div.img-articulo-->
+					
+					<div class="estracto-contenido-articulo">
+						<p><?php the_excerpt(); ?></p>
+						<a href="<?php the_permalink(); ?>" class="read-more">Leer Más</a>
+					</div><!-- fin del div.estracto-contenido-articulo -->
+				</div><!-- fin del div.imagen-con-estracto-contenido -->
+			</article>
 	
 		<?php endwhile; else:?>
 		<h1>Error</h1>
@@ -31,7 +42,7 @@
 		
 		</div><!-- fin del div.col-sm-8.contenido -->
 		
-		<div class="col-sm-4 lateral-blog">
+		<div class="col-sm-4 lateral-blog margin-top-down">
 			<?php get_sidebar('blog');?>
 		</div><!-- fin del div.col-sm-4.lateral-blog -->
 		
